@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                sh 'pwd'
+                sh 'ls'
+            }
+        }
+        stage('sneha') {
+            steps {
+                sh 'echo hello there'
+                sh 'git clone https://github.com/vrk2299/gittesting'
+            }
+            
+        }
+    }
+}
